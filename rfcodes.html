@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90726203-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>RPI Home Security</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Home Security with RPI</a><img src="images/pi_logo3.png" height="40" width="26">
+            </div>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                     <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><img src="images/pi_box.png" height="18" width="24"/></i> Before You Begin<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li class="active">
+                                <a href="index.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Introduction</a>
+                            </li>    
+                            <li class="active">
+                                <a href="features.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Features</a>
+                            </li>  							
+                            <li class="active">
+                                <a href="hardware.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Hardware required</a>
+                            </li>  							
+                            <li class="active">
+                                <a href="software.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Software required</a>
+                            </li> 						
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><img src="images/pi_box.png" height="18" width="24"/></i> Getting Started<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo1" class="collapse">
+                            <li class="active">
+                                <a href="download.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Download the files</a>
+                            </li> 							
+                            <li class="active">
+                                <a href="started.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Basic information</a>
+                            </li>         
+                            <li class="active">
+                                <a href="gpio.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Setting up RF devices</a>
+                            </li> 									
+                            <li class="active">
+                                <a href="rfcodes.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> RF Codes</a>
+                            </li>                           
+                            <li class="active">
+                                <a href="permissions.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> File permissions</a>
+                            </li>        
+                            <li class="active">
+                                <a href="phone.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i>Linking to smart phone</a>
+                            </li>   							
+                        </ul>
+                    </li>       
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo2"><img src="images/pi_box.png" height="18" width="24"/></i> Further customization<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo2" class="collapse">
+                            <li class="active">
+                                <a href="motion.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Motion software</a>
+                            </li>     
+                            <li class="active">
+                                <a href="multiple.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Multiple cameras</a>
+                            </li>  							
+                            <li class="active">
+                                <a href="sound.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Miscellaneous</a>
+                            </li>                                                            
+                        </ul>
+                    </li>      
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo3"><img src="images/pi_box.png" height="18" width="24"/></i> Questions / Feedback?<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo3" class="collapse">
+                            <li class="active">
+								<a href="https://groups.google.com/forum/#!forum/raspberry-pi-home-security-system"><img src="images/pi_logo.png" height="17.7" width="15"/> Visit the forum</a>
+                            </li>     
+  						</ul>	
+                    </li>  
+ 
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo4"><img src="images/pi_box.png" height="18" width="24"/></i> Donate / Contact<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo4" class="collapse">
+                            <li class="active">
+								<a href="donate.html"><img src="images/pi_logo.png" height="17.7" width="15"/> Donate with Paypal</a>
+                            </li> 
+                            <li class="active">
+								<a href="contact.html"><img src="images/pi_logo.png" height="17.7" width="15"/> Contact</a>
+                            </li>  	  							
+						</ul>	
+                    </li> 		
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            RF Codes
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <img src="images/pi_logo1.png" height="17.7" width="15"/> <a href="permissions.html">Next: File Permissions</a>
+                            </li>
+                            <li>
+                                <img src="images/pi_logo4.png" height="17.7" width="15"/>  <a href="gpio.html">Previous: Setting Up RF Devices</a>
+                            </li>                            
+                            <li class="active">
+                                <img src="images/pi_logo.png" height="17.7" width="15"/></i> RF Codes
+                            </li>
+                        </ol>
+
+						<img src="images/pi_big.png" style="width:400px;height:267px" ALIGN="right">	
+						<big><big>Step 1.</big></big> If you only have one siren, skip to Step 2. Else, first program all the sirens to a single clicker.
+						To do so, unplug each siren for 2 minutes, then within 2 seconds of turning it on, hold down the bell button on the single clicker 
+						that you want to use for 10 seconds. After hearing a beep, press the lock button.<br><br>
+						
+						<big><big>Step 2.</big></big> Next, make sure that the 433utils folder (see Required Software) is in the <i>/home/pi/</i> directory. Move into 
+						<i>/home/pi/433Utils/RPi_utils/</i> and type <pre>sudo ./RFSniffer</pre> Now that RF Sniffer is listening, 
+						click the lock and unlock buttons on the clicker to get their respective RF codes.<br><br>
+						
+						<big><big>Step 3.</big></big> Enter the siren RF codes (on the keychain clicker, 'S' is to sound the siren, the 'lock button' is to turn it off, and 
+						the 'unlock button' will be used to disarm the system) into the input_variables.txt file.<br><br>
+						
+						<big><big>Step 4.</big></big> Perform the same RF Sniffing process for each of your sensors by activating them. Enter
+						their RF codes into the input_variables.txt file as instructed.<br><br>						
+						
+                    </div>
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

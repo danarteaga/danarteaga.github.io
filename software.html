@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90726203-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>RPI Home Security</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Home Security with RPI</a><img src="images/pi_logo3.png" height="40" width="26">
+            </div>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><img src="images/pi_box.png" height="18" width="24"/></i> Before You Begin<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li class="active">
+                                <a href="index.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Introduction</a>
+                            </li>  
+                            <li class="active">
+                                <a href="features.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Features</a>
+                            </li>  							
+                            <li class="active">
+                                <a href="hardware.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Hardware required</a>
+                            </li>  							
+                            <li class="active">
+                                <a href="software.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Software required</a>
+                            </li> 						
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><img src="images/pi_box.png" height="18" width="24"/></i> Getting Started<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo1" class="collapse">
+                            <li class="active">
+                                <a href="download.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Download the files</a>
+                            </li> 							
+                            <li class="active">
+                                <a href="started.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Basic information</a>
+                            </li>            
+                            <li class="active">
+                                <a href="gpio.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Setting up RF devices</a>
+                            </li> 									
+                            <li class="active">
+                                <a href="rfcodes.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> RF Codes</a>
+                            </li>                           
+                            <li class="active">
+                                <a href="permissions.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> File permissions</a>
+                            </li>        
+                            <li class="active">
+                                <a href="phone.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i>Linking to smart phone</a>
+                            </li>   							
+                        </ul>
+                    </li>       
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo2"><img src="images/pi_box.png" height="18" width="24"/></i> Further customization<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo2" class="collapse">
+                            <li class="active">
+                                <a href="motion.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Motion software</a>
+                            </li>        
+                            <li class="active">
+                                <a href="multiple.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Multiple cameras</a>
+                            </li>  							
+                            <li class="active">
+                                <a href="sound.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Miscellaneous</a>
+                            </li>                                                            
+                        </ul>
+                    </li>      
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo3"><img src="images/pi_box.png" height="18" width="24"/></i> Questions / Feedback?<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo3" class="collapse">
+                            <li class="active">
+								<a href="https://groups.google.com/forum/#!forum/raspberry-pi-home-security-system"><img src="images/pi_logo.png" height="17.7" width="15"/> Visit the forum</a>
+                            </li>     
+  						</ul>	
+                    </li>  
+ 
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo4"><img src="images/pi_box.png" height="18" width="24"/></i> Donate / Contact<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo4" class="collapse">
+                            <li class="active">
+								<a href="donate.html"><img src="images/pi_logo.png" height="17.7" width="15"/> Donate with Paypal</a>
+                            </li> 
+                            <li class="active">
+								<a href="contact.html"><img src="images/pi_logo.png" height="17.7" width="15"/> Contact</a>
+                            </li>  	  							
+						</ul>	
+                    </li> 		
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Software Required
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <img src="images/pi_logo1.png" height="17.7" width="15"/> <a href="download.html">Next: Download the Files</a>
+                            </li>
+                            <li>
+                                <img src="images/pi_logo4.png" height="17.7" width="15"/>  <a href="hardware.html">Previous: Hardware Required</a>
+                            </li>                            
+                            <li class="active">
+                                <img src="images/pi_logo.png" height="17.7" width="15"/></i> Software Required
+                            </li>
+                        </ol>
+
+						Below is a realistic list of software and costs required for this project. A description of the purpose of many of these
+						software items is listed in the section titled "Getting Started." When running the commands listed in the table, you must be in the 
+						<i>/home/pi/</i> directory. The total hardware and software costs amount to $175 for a complete security system.<br><br>
+						Before you begin, make sure to run <pre>sudo apt-get update</pre> followed by <pre>sudo apt-get upgrade</pre> in order to obtain the most 
+						recently updated software packages.<br><br>
+
+<table>
+  <tr>
+    <th>Software Package</th>
+    <th>Website or Command (performed while in /home/pi/)</th>
+    <th>Current Cost</th>
+  </tr>
+  <tr>
+    <td>Git</td>
+    <td><a href="https://git-scm.com/downloads"><i>sudo apt-get install git</i></a></td>
+    <td>Free</td>
+  </tr>       
+  <tr>
+    <td>WiringPi </td>
+    <td><a href="https://projects.drogon.net/raspberry-pi/wiringpi/download-and-install/"><i>git clone git://git.drogon.net/wiringPi</i>; <i>cd wiringPi</i>; <i>./build</i></a> </td>
+    <td>Free</td>
+  </tr>  
+  <tr>
+    <td>Insync-portable (see Basic Information)</td>	
+    <td><a href="https://www.insynchq.com/downloads">https://www.insynchq.com/downloads</a> (select armhf)</td>	
+    <td>Free 15-day trial, then $30</td>		
+  </tr>  
+   <td>PushBullet (see 1)</td>
+    <td><a href="https://pypi.python.org/pypi/pushbullet.py">https://pypi.python.org/pypi/pushbullet.py</a></td>
+    <td>Free </td>
+  </tr>
+   <td>Duck DNS  (see Basic Information)</td>
+    <td><a href="https://www.duckdns.org/install.jsp">https://www.duckdns.org/install.jsp</a> (select pi) </td>
+    <td>Free </td>
+  </tr>  
+  </table>
+	<br>
+	(1) Unfortunately, the push notification software PushBullet is only pushing notifications on Android devices due to a bug
+	with IOS currently. Additionally, you must have a more recent version of Python (e.g. 2.7.12) to run this 
+	software, which additionally requires new Numpy and Scipy packages, the installation of which are beyond
+	the scope of this tutorial. If you are up to the challenge, you can the register a new PushBullet account for free at
+	<a href="https://www.pushbullet.com/"> https://www.pushbullet.com/ </a><br>
+
+                    </div>
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

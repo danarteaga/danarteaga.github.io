@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90726203-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>RPI Home Security</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Home Security with RPI</a><img src="images/pi_logo3.png" height="40" width="26">
+            </div>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><img src="images/pi_box.png" height="18" width="24"/></i> Before You Begin<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li class="active">
+                                <a href="index.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Introduction</a>
+                            </li>    
+                            <li class="active">
+                                <a href="features.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Features</a>
+                            </li>  							
+                            <li class="active">
+                                <a href="hardware.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Hardware required</a>
+                            </li>  							
+                            <li class="active">
+                                <a href="software.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Software required</a>
+                            </li> 						
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><img src="images/pi_box.png" height="18" width="24"/></i> Getting Started<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo1" class="collapse">
+                            <li class="active">
+                                <a href="download.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Download the files</a>
+                            </li> 							
+                            <li class="active">
+                                <a href="started.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Basic information</a>
+                            </li>                 
+                            <li class="active">
+                                <a href="gpio.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Setting up RF devices</a>
+                            </li>       							
+                            <li class="active">
+                                <a href="rfcodes.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> RF Codes</a>
+                            </li>                           
+                            <li class="active">
+                                <a href="permissions.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> File permissions</a>
+                            </li>        
+                            <li class="active">
+                                <a href="phone.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i>Linking to smart phone</a>
+                            </li>   							
+                        </ul>
+                    </li>       
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo2"><img src="images/pi_box.png" height="18" width="24"/></i> Further customization<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo2" class="collapse">
+                            <li class="active">
+                                <a href="motion.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Motion software</a>
+                            </li>      
+                            <li class="active">
+                                <a href="multiple.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Multiple cameras</a>
+                            </li>  							
+                            <li class="active">
+                                <a href="sound.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Miscellaneous</a>
+                            </li>                                                            
+                        </ul>
+                    </li>      
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo3"><img src="images/pi_box.png" height="18" width="24"/></i> Questions / Feedback?<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo3" class="collapse">
+                            <li class="active">
+								<a href="https://groups.google.com/forum/#!forum/raspberry-pi-home-security-system"><img src="images/pi_logo.png" height="17.7" width="15"/> Visit the forum</a>
+                            </li>     
+  						</ul>	
+                    </li>  
+ 
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo4"><img src="images/pi_box.png" height="18" width="24"/></i> Donate / Contact<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo4" class="collapse">
+                            <li class="active">
+								<a href="donate.html"><img src="images/pi_logo.png" height="17.7" width="15"/> Donate with Paypal</a>
+                            </li> 
+                            <li class="active">
+								<a href="contact.html"><img src="images/pi_logo.png" height="17.7" width="15"/> Contact</a>
+                            </li>  	  							
+						</ul>	
+                    </li> 					
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+		
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+				
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Creating a Fully Functional Home Security System 
+							<small><br>A free, simple, step-by-step tutorial created exclusively for the Raspberry Pi</small>
+                        </h1>					
+						
+
+                        <ol class="breadcrumb">
+                            <li>
+                                <img src="images/pi_logo1.png" height="17.7" width="15"/> <a href="features.html"> Next: Features</a>
+                            </li>
+                            <li class="active">
+                                <img src="images/pi_logo.png" height="17.7" width="15"/> Introduction
+                            </li>
+                        </ol>					  
+
+						<i>Last updated: February 15, 2018</i><br><br>
+						
+						<big>T</big>he range of applications of the Raspberry Pi is just about limitless. 
+						A particularly practical, and cost-effective, application of this device is home security.
+						However, many of the DIY guides online are incomplete, confusing, and/or overly-technical.
+						As a result, I've designed this website to make a simple, step-by-step tutorial on how to quickly create
+						your own comprehensive home security system with the Raspberry Pi. All user-specific parameters 
+						are stored in a simple text file and thus <b>essentially no coding experience
+						is required</b>, although much can be learned 
+						by navigating through the line-by-line descriptions that are provided in the scripts.<br>
+							  
+  						<a href="images/diagram.png" target="_blank"><img src="images/diagram.png"  style="width:297px;height:256px;margin-right:15px;margin-top:26px;"; ALIGN="left"></a>									  
+                   		
+						<br><big>H</big>ighlights of this security system include a <b>live, password-protected video stream </b> that is easily viewed on any smart phone browser, as well as 
+						<b>text, push, and email notifications</b>, the latter two of which include a <b>representative image of the motion event</b>. A complete set of features is provided in the next page.<br>
+						
+						<i><small><br><br><u>A few thoughts on using the Raspberry Pi for home security:</u><br>
+						This project is not only fun to implement, but it yields a nice financial return as well. 
+						The average cost for installing and setting up a new home-security system can easily surpass $1000, with 
+						additional monthly costs ranging from $15-$100 <small><small>(1)</small></small>. However, when following this tutorial, <b>your total
+						(one-time) cost for a <u>complete</u> system will 
+						be roughly ±$175</b> (depending upon how many features you want). While a limitation
+						of this RPI security system is that no one is actively monitoring for potential comprises to
+						your home security, the utility of such a real-time monitoring system is questionable. Police respond
+						to roughly 36 million alarm activations per year, an endeavor which costs tax-payers around $2 billion
+						a year. Yet, the majority of these home security alarm calls - 94 to 98% to be precise - are actually false <small><small>(2)</small></small>. The 
+						ramifications of this data is that law enforcement agencies tend to respond to these situations with low priority.
+						Specifically, the time of an average burglary is 8-12 minutes <small><small>(3)</small></small> and the average police response
+						time is around 7 minutes when a security system activation is verified by audio or video. However, much lower priority is assigned
+						to conventional security system alarms (e.g. from tripping a motion sensor), leading to significantly longer response times.
+						As stated in an article in a local Austin newspaper, "If they cry wolf 98% of the time, it’s not taken seriously" 
+						<small><small>(4)</small></small>. Thus, the emotional security provided by such active monitoring 
+						systems is based on the false pretense that such systems are generally effective in stopping theft.<br>						
+						
+						<br>
+						<small><small>(1) <a href="http://money.usnews.com/money/personal-finance/articles/2013/09/09/the-cost-of-keeping-your-home-safe"> 
+						http://money.usnews.com/money/personal-finance/articles/2013/09/09/the-cost-of-keeping-your-home-safe.</a>
+						(2) <a href="https://www.angieslist.com/articles/do-false-alarms-cost-you-money.htm">
+						https://www.angieslist.com/articles/do-false-alarms-cost-you-money.htm</a>
+						(3) <a href="http://www.asecurelife.com/average-police-response-time/">http://www.asecurelife.com/average-police-response-time/</a>
+						(4) <a href="http://www.mystatesman.com/news/local/times-out-burglar-alarm-means-crime/BuW4BRAhoxQgRKEygXFwIP/">
+						http://www.mystatesman.com/news/local/times-out-burglar-alarm-means-crime/BuW4BRAhoxQgRKEygXFwIP/</a>
+						(Also see) <a href="http://www.economist.com/blogs/democracyinamerica/2015/12/police-response-times">
+						http://www.economist.com/blogs/democracyinamerica/2015/12/police-response-times</a><br></small></small></small></i>
+
+                    </div>
+					
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

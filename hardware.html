@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90726203-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>RPI Home Security</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Home Security with RPI</a><img src="images/pi_logo3.png" height="40" width="26">
+            </div>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><img src="images/pi_box.png" height="18" width="24"/></i> Before You Begin<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li class="active">
+                                <a href="index.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Introduction</a>
+                            </li>    
+                            <li class="active">
+                                <a href="features.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Features</a>
+                            </li>  							
+                            <li class="active">
+                                <a href="hardware.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Hardware required</a>
+                            </li>  							
+                            <li class="active">
+                                <a href="software.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Software required</a>
+                            </li> 						
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><img src="images/pi_box.png" height="18" width="24"/></i> Getting Started<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo1" class="collapse">
+                            <li class="active">
+                                <a href="download.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Download the files</a>
+                            </li> 							
+                            <li class="active">
+                                <a href="started.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Basic information</a>
+                            </li>              
+                            <li class="active">
+                                <a href="gpio.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Setting up RF devices</a>
+                            </li> 									
+                            <li class="active">
+                                <a href="rfcodes.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> RF Codes</a>
+                            </li>                           
+                            <li class="active">
+                                <a href="permissions.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> File permissions</a>
+                            </li>        
+                            <li class="active">
+                                <a href="phone.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i>Linking to smart phone</a>
+                            </li>   							
+                        </ul>
+                    </li>       
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo2"><img src="images/pi_box.png" height="18" width="24"/></i> Further customization<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo2" class="collapse">
+                            <li class="active">
+                                <a href="motion.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Motion software</a>
+                            </li>   
+                            <li class="active">
+                                <a href="multiple.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Multiple cameras</a>
+                            </li>  							
+                            <li class="active">
+                                <a href="sound.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Miscellaneous</a>
+                            </li>                                                            
+                        </ul>
+                    </li>      
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo3"><img src="images/pi_box.png" height="18" width="24"/></i> Questions / Feedback?<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo3" class="collapse">
+                            <li class="active">
+								<a href="https://groups.google.com/forum/#!forum/raspberry-pi-home-security-system"><img src="images/pi_logo.png" height="17.7" width="15"/> Visit the forum</a>
+                            </li>     
+  						</ul>	
+                    </li>  
+ 
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo4"><img src="images/pi_box.png" height="18" width="24"/></i> Donate / Contact<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo4" class="collapse">
+                            <li class="active">
+								<a href="donate.html"><img src="images/pi_logo.png" height="17.7" width="15"/> Donate with Paypal</a>
+                            </li> 
+                            <li class="active">
+								<a href="contact.html"><img src="images/pi_logo.png" height="17.7" width="15"/> Contact</a>
+                            </li>  	  							
+						</ul>	
+                    </li> 		
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Hardware Required
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <img src="images/pi_logo1.png" height="17.7" width="15"/> <a href="software.html">Next: Software Required</a>
+                            </li>
+                            <li>
+                                <img src="images/pi_logo4.png" height="17.7" width="15"/>  <a href="features.html">Previous: Features</a>
+                            </li>                            
+                            <li class="active">
+                                <img src="images/pi_logo.png" height="17.7" width="15"/></i> Hardware Required
+                            </li>
+                        </ol>
+
+						Below is a layout of the security system, as well as a realistic list of hardware and costs required for this project. The total hardware cost amounts to $145.<br>
+					<a href="images/diagram2.png" target="_blank"><img src="images/diagram2.png" style="width:400px;height:227px" ALIGN="left" vspace="15"></a>
+					
+					<table>
+ <tr>
+    <th>Product Description</th>
+    <th>Google Search Term</th>
+    <th>Estimated Cost</th>
+  </tr>
+  <tr>
+    <td>Raspberry Pi (see 1)</td>	
+    <td><a href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=Raspberry+Pi+3+Model+B+Amazon">Raspberry Pi 3 Model B Amazon</a></td>	
+    <td>$36</td>		
+  </tr>
+  <tr>
+    <td>Camera Gooseneck Mount</td>
+    <td><a href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#safe=off&q=Camera+Board+360+Gooseneck+Mount+ModMyPi">Camera Board 360 Gooseneck Mount ModMyPi</a></td>
+    <td>$5</td>
+  </tr>     
+   <td>Camera module</td>
+    <td><a href="https://www.google.com/webhp?sourceid=chrome-inRaspberry%20Pi%205MP%20Camera%20Board%20Amazonstant&ion=1&espv=2&ie=UTF-8#safe=off&q=Raspberry+Pi+5MP+Camera+Board+Amazon">Raspberry Pi 5MP Camera Board Amazon</a></td>
+    <td>$20</td>
+  </tr>
+  <tr>
+    <td>SD Card</td>
+    <td><a href="https://www.google.com/webhp?sourceid=chrome-inRaspberry%20Pi%205MP%20Camera%20Board%20Amazonstant&ion=1&espv=2&ie=UTF-8#safe=off&q=SanDisk+Extreme+Pro+16GB+MicroSDHC+Amazon">SanDisk Extreme Pro 16GB MicroSDHC Amazon</a></td>
+    <td>$20</td>
+  </tr>
+  <tr>
+    <td>Charger (see 2)</td>
+    <td><a href="https://www.google.com/webhp?sourceid=chrome-inRaspberry%20Pi%205MP%20Camera%20Board%20Amazonstant&ion=1&espv=2&ie=UTF-8#safe=off&q=NorthPada+UL+Listed+Micro+USB+Mains+Power+Wall+Supply+Charger+5V+2.5A+Amazon">NorthPada UL Listed Micro USB Mains Power Wall Supply Charger 5V 2.5A Amazon</a></td>
+    <td>$9</td>
+  </tr>
+  <tr>
+    <td>Case (see 3)</td>
+    <td><a href="https://www.google.com/search?q=Raspberry+Pi+Case+by+Viaboot+Amazon&oq=Raspberry+Pi+Case+by+Viaboot+Amazon&aqs=chrome..69i57.368j0j7&sourceid=chrome&ie=UTF-8">Raspberry Pi Case by Viaboot Amazon</a></td>
+    <td>$8</td>
+  </tr>
+  <tr>
+    <td>Speaker</td>
+    <td><a href="https://www.google.com/search?q=Raspberry+Pi+Case+by+Viaboot+Amazon&oq=Raspberry+Pi+Case+by+Viaboot+Amazon&aqs=chrome..69i57.368j0j7&sourceid=chrome&ie=UTF-8#safe=off&q=Logitech+S120+Desktop+Speaker+Walmart">Logitech S120 Desktop Speaker Walmart</a></td>
+    <td>$9</td>
+  </tr>
+  <tr>
+    <td>Line-in</td>
+    <td><a href="https://www.google.com/search?q=JacobsParts+10-Foot+3.5mm+1%2F8%22+Stereo+Amazon&oq=JacobsParts+10-Foot+3.5mm+1%2F8%22+Stereo+Amazon&aqs=chrome..69i57j69i60.622j0j9&sourceid=chrome&ie=UTF-8">JacobsParts 10-Foot 3.5mm 1/8" Stereo Amazon</a></td>
+    <td>$3.50</td>
+  </tr>
+  <tr>
+    <td>433Mhz Magnetic Sensors (see 4)</td>
+    <td><a href="https://www.google.com/search?q=8+set+433Mhz+Wireless%2FDoor+Window+Sensor+Ebay&oq=8+set+433Mhz+Wireless%2FDoor+Window+Sensor+Ebay&aqs=chrome..69i57.367j0j9&sourceid=chrome&ie=UTF-8">8 set 433Mhz Wireless/Door Window Sensor Ebay</a></td>
+    <td>$24</td>
+  </tr>
+  <tr>
+    <td>Jumper Cables</td>
+    <td><a href="https://www.google.com/search?q=40pc+Dupont+Wire+Jumper+Cable+Female+to+Female+Ebay&oq=40pc+Dupont+Wire+Jumper+Cable+Female+to+Female+Ebay&aqs=chrome..69i57j69i60l2.478j0j9&sourceid=chrome&ie=UTF-8">40pc Dupont Wire Jumper Cable Female to Female Ebay<a/></td>
+    <td>$3.75</td>
+  </tr>
+  <tr>
+    <td>433Mhz Transmitter/Receiver</td>
+    <td><a href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=433Mhz+Superheterodyne+3400+RF+Transmitter+and+Receiver+Ebay">433Mhz Superheterodyne 3400 RF Transmitter and Receiver Ebay<a/></td>
+    <td>$9</td>
+  </tr>  
+  <tr>
+    <td>433Mhz Siren/Transmitter + Motion Sensor</td>
+    <td><a href="https://www.google.com/search?q=433mhz+sensor+Wireless+32+Guard+Zones+Home+Alarm+Siren+System+AliExpress&oq=433mhz+sensor+Wireless+32+Guard+Zones+Home+Alarm+Siren+System+AliExpress&aqs=chrome..69i57j69i60.478j0j9&sourceid=chrome&ie=UTF-8">433mhz sensor Wireless 32 Guard Zones Home Alarm Siren System AliExpress<a/></td>
+    <td>$18</td>
+  </tr> 
+  <tr>
+    <td>433Mhz Glass Break Sensor</td>
+    <td><a href="https://www.google.com/search?q=A07+Wireless+Glass+Break+Sensor+Detector+Ebay&oq=A07+Wireless+Glass+Break+Sensor+Detector+Ebay&aqs=chrome..69i57j69i60.432j0j9&sourceid=chrome&ie=UTF-8">A07 Wireless Glass Break Sensor Detector Ebay<a/></td>
+    <td>$9</td>
+  </tr>   
+  <tr>
+    <td>433Mhz Carbon Monoxide Detector</td>
+    <td><a href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#safe=off&q=ebay+433MHZ+Home+Security+Safety+CO+Gas+Carbon+Monoxide+Alarm+Detector&*">Ebay 433MHZ Home Security Safety CO Gas Carbon Monoxide Alarm Detector<a/></td>
+    <td>$11</td>
+  </tr>    
+  <tr>
+    <td>Ethernet Cord</td>
+    <td><a href="https://www.google.com/search?q=Ethernet+cord+Amazon&oq=Ethernet+cord+Amazon&aqs=chrome..69i57j0l5.511j0j9&sourceid=chrome&ie=UTF-8">Ethernet cord Amazon</a></td>
+    <td>$5</td>
+  </tr>  
+  <tr>
+    <td>Magnetic Sensor Batteries</td>
+    <td><a href="https://www.google.com/search?q=Energizer+A23+Battery&oq=Energizer+A23+Battery&aqs=chrome..69i57j69i61.464j0j7&sourceid=chrome&ie=UTF-8">Energizer A23 Battery</a></td>
+    <td>$5</td>
+  </tr>  
+</table>
+<br><br>
+(1) Only Raspberry Pi 2 models or greater currently have enough CPU power for this project<br>
+(2) It is important to obtain a 5V 2.5A charger in order to have enough power for the sensors<br>
+(3) Make sure to have slits underneath the case cover so that jumper cables can slip through<br>
+(4) Expect shipping from all products on Ebay/AliExpress to take up to 45 days as they come from China<br><br>
+
+
+                    </div>
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

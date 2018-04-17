@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90726203-1', 'auto');
+  ga('send', 'pageview');
+
+  
+</script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>RPI Home Security</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Home Security with RPI</a><img src="images/pi_logo3.png" height="40" width="26">
+            </div>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                     <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><img src="images/pi_box.png" height="18" width="24"/></i> Before You Begin<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li class="active">
+                                <a href="index.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Introduction</a>
+                            </li> 
+                            <li class="active">
+                                <a href="features.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Features</a>
+                            </li>  							
+                            <li class="active">
+                                <a href="hardware.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Hardware required</a>
+                            </li>  							
+                            <li class="active">
+                                <a href="software.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Software required</a>
+                            </li> 
+                            <li class="active">
+                                <a href="download.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Download the files</a>
+                            </li> 							
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><img src="images/pi_box.png" height="18" width="24"/></i> Getting Started<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo1" class="collapse">
+                            <li class="active">
+                                <a href="started.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Basic information</a>
+                            </li>            
+                            <li class="active">
+                                <a href="gpio.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Setting up RF devices</a>
+                            </li> 									
+                            <li class="active">
+                                <a href="rfcodes.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> RF Codes</a>
+                            </li>                           
+                            <li class="active">
+                                <a href="permissions.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> File permissions</a>
+                            </li>        
+                            <li class="active">
+                                <a href="phone.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i>Linking to smart phone</a>
+                            </li>   							
+                        </ul>
+                    </li>       
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo2"><img src="images/pi_box.png" height="18" width="24"/></i> Further customization<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo2" class="collapse">
+                            <li class="active">
+                                <a href="motion.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Motion software</a>
+                            </li>     
+                            <li class="active">
+                                <a href="multiple.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Multiple cameras</a>
+                            </li>  							
+                            <li class="active">
+                                <a href="sound.html"><img src="images/pi_logo.png" height="17.7" width="15"/></i> Miscellaneous</a>
+                            </li>                                                            
+                        </ul>
+                    </li>      
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo3"><img src="images/pi_box.png" height="18" width="24"/></i> Questions / Feedback?<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo3" class="collapse">
+                            <li class="active">
+								<a href="https://groups.google.com/forum/#!forum/raspberry-pi-home-security-system"><img src="images/pi_logo.png" height="17.7" width="15"/> Visit the forum</a>
+                            </li>     
+  						</ul>	
+                    </li>  
+ 
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo4"><img src="images/pi_box.png" height="18" width="24"/></i> Donate / Contact<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo4" class="collapse">
+                            <li class="active">
+								<a href="donate.html"><img src="images/pi_logo.png" height="17.7" width="15"/> Donate with Paypal</a>
+                            </li> 
+                            <li class="active">
+								<a href="contact.html"><img src="images/pi_logo.png" height="17.7" width="15"/> Contact</a>
+                            </li>  	  							
+						</ul>	
+                    </li> 		
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Basic Information
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <img src="images/pi_logo1.png" height="17.7" width="15"/> <a href="gpio.html">Next: Setting Up RF Devices</a>
+                            </li>
+                            <li>
+                                <img src="images/pi_logo4.png" height="17.7" width="15"/>  <a href="download.html">Previous: Download the Files</a>
+                            </li>                            
+                            <li class="active">
+                                <img src="images/pi_logo.png" height="17.7" width="15"/></i> Basic Information
+                            </li>
+                        </ol>
+
+						<big><big>Step 1.</big></big> Enable SSH on your Raspberry Pi. <a href="http://www.instructables.com/id/Use-ssh-to-talk-with-your-Raspberry-Pi/">Click here for instructions.</a>
+						Of note, the local IP address of the Raspberry Pi can be found by typing <pre>hostname -I</pre><br>
+						
+						<big><big>Step 2.</big></big> Setup port-forwarding. To do this, you must go to the Port Forwarding section of your router.
+						From there, forward port 22 (for SSH) for the Raspberry Pi IP address. You will also need to forward a port for the live
+						camera feed (8081). Note: if you are going to be using multiple Raspberry 
+						Pis, please see the image on the Multiple Cameras page under the Further customization section instead. <br>
+						<img src="images/port.png" style="width:700px;height:200px"><br><br>
+						
+						<big><big>Step 3.</big></big> Open up the input_variables.txt file and update the prompts based upon your 
+						activity in Steps 1 and 2. Next, assign a username and password to be used to login to the live video feed, 
+						the number of degrees required to rotate the live feed correctly, and the name of your camera. Lastly, identify the full path of your 
+						python interpreter. You can determine this by typing <pre>which python</pre> in the command-line. If you would like 
+						to use a different version of python, you may specify that.<br><br>
+						
+						<big><big>Step 4.</big></big> At the current moment, you will only be able to connect via your smart phone if you are 
+						connected to the same Wifi network as your Raspberry Pi. To connect remotely, you have 2 options: <br>&nbsp&nbsp1) Create a 
+						domain name via the Dynamic Domain Name System (DDNS) service offered by your router (not all routers can do this), 
+						or <br>&nbsp&nbsp2) Download Duck DNS (see Required Software section), which is software which will periodically check your IP
+						address and re-register it to your assigned domain name if it changes. On the Duck DNS website, make sure to click on 'pi' as the 
+						operating system in order to get easy, step-by-step instructions on how to set everything up.<br>
+						Enter your domain name into the input_variables.txt file. For example: <b>domain_name mysecretedomain.duckdns.org</b><br><br>
+						
+						<big><big>Step 5.</big></big> Insync-portable is used to upload image and video files to 
+						Google Drive. There is a free 15-day trial, after which time there is a one time cost of $30. Once downloaded, you can extract the
+						files and use an SFTP client (also Port 22) like WinSCP to transfer the <i>inysnc-portable</i> folder to your <i>/home/pi/Desktop/</i> directory 
+						(it must be placed here). With SSH, <pre>cd /home/pi/Desktop/insync-portable</pre> and run 
+						<pre>./insync-portable help add_account</pre> for instructions on how to do so. The command you enter should be (sudo needed): 
+						<pre>sudo ./insync-portable add_account -a AUTH_CODE -p /home/pi/insync_email@gmail.com</pre>
+						In addition, enter your insync email address into the input_variables.txt file.<br><br>
+						
+						<big><big>Step 6.</big></big> Determine whether or not you want to use Pushbullet notifications (see Software Required), text notifications, and/or
+						email notifications for alerts by entering True/False into the input_variables.txt file. Click
+						<a href="http://ozzmaker.com/send-email-from-the-raspberry-pi-or-linux-command-line-with-attachments/"> here </a> 
+						if you want to setup the ability to send texts and/or emails (as the mail command is used for both).<br><br>
+						
+						<big><big>Step 7.</big></big> Ensure that the crontab file automate_tasks.txt is run on startup, which is a file that automates
+						various commands necessary for the security system. To do this: <pre>cd /home/pi</pre> <pre>nano .bashrc </pre>  
+						add:<pre>crontab /home/pi/Desktop/automate_tasks.txt</pre> to the .bashrc file, then
+						<pre>ctrl + o (to save) </pre> <pre>ctrl + x (to exit)</pre><br>
+						
+						<big><big>Step 8.</big></big> Every time that changes are made to any of the files, the system must be restarted 
+						via <pre>sudo python /home/pi/Desktop/reboot.py</pre>
+						<br><br>	
+
+						Note: I have found that I had to replace the 433Mhz receiver every 6 months due to reliability issues, although previously 
+						replaced receivers will then work again (they seem to temporarily burn out). I also find 
+						myself changing the batteries on the door sensors around every 6 months. If anyone has a 
+						better solution, please let me know (see Contact section)!<br><br>
+						
+                    </div>
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
